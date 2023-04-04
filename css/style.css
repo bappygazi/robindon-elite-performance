@@ -1,0 +1,376 @@
+/*============= root css start===============*/
+:root {
+    /* font family */
+    --primary-font: 'Oswald', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --tertiary-font: 'Viga', sans-serif;
+
+    --btn-color: #2341AF;
+    --btn-hover: #1333a8;
+    --section-padding: 100px;
+}
+
+/*============= common css start===============*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: var(--primary-font);
+}
+
+h2 {
+    color: #071E2A;
+    font-size: 60px;
+    line-height: 69px;
+    letter-spacing: -0.02em;
+    font-family: var(--tertiary-font);
+}
+
+h3 {
+    color: #FC802C;
+    font-size: 31px;
+    letter-spacing: 1.6px;
+    font-family: var(--primary-font);
+}
+
+h4 {
+    color: #071E2A;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--primary-font);
+}
+
+p {
+    color: #4D5F93;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--secondary-font);
+}
+
+.primary-btn {
+    height: 50px;
+    font-size: 16px;
+    padding: 0 20px;
+    border-radius: 10px;
+    letter-spacing: 0.4656px;
+    font-family: var(--secondary-font);
+    background-color: var(--btn-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+/*============= common css end===============*/
+
+
+/*================== 
+  navbar part css
+====================*/
+#navigation .navbar {
+    height: 90px;
+    padding: 0 30px;
+    background-color: #030303;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: var(--primary-font);
+}
+
+.navbar .nav-link:hover {
+    color: #cacaca;
+}
+
+/*============= banner part css ===============*/
+#banner {
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner.jpg);
+}
+
+/*============= what part css ===============*/
+#what {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+/*============= program part css ===============*/
+#program {
+    padding-top: var(--section-padding);
+    padding-bottom: 100px;
+}
+
+#program::after {
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../images/program-shape.svg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#program .program-title h2::after {
+    height: 1px;
+    content: "";
+    bottom: 20px;
+    width: 550px;
+    right: -510px;
+    position: absolute;
+    background-color: #FC802C;
+}
+
+#program .program-item {
+    padding-top: var(--section-padding);
+}
+
+#program .program-item .program-text .primary-text {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: var(--primary-font);
+}
+
+.program-item .program-text .list ul li {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: var(--secondary-font);
+}
+
+.program-item .program-text .rear-text {
+    color: #FC802C;
+    font-family: var(--primary-font);
+}
+
+/*============= slider part css ===============*/
+#slider {
+    position: relative;
+    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding);
+    background-color: rgba(255, 255, 255, .8);
+}
+
+#slider .slider-title h2 {
+    margin-bottom: 90px;
+}
+
+#slider .slider-title h2::after {
+    height: 2px;
+    content: "";
+    bottom: 20px;
+    width: 700px;
+    right: -645px;
+    position: absolute;
+    background-color: #FC802C;
+}
+
+#slider .slider-text h3 {
+    color: #071E2A;
+}
+
+#slider .slider-text p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+#slider .slider-text a {
+    color: #FC802C;
+}
+
+#slider .slider-text .pstyle {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4D5F93;
+}
+
+#slider .prev,
+#slider .next {
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    transition: .2s;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 60px;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #FC802C;
+}
+
+#slider .prev {
+    bottom: 0;
+    right: 70px;
+}
+
+#slider .next {
+    bottom: 0;
+    right: 0;
+}
+
+#slider .prev:hover {
+    background-color: #071E2A;
+}
+
+#slider .next:hover {
+    background-color: #071E2A;
+}
+
+/*============= books part css ===============*/
+#books {
+    padding-bottom: 260px;
+    background-color: var(--btn-color);
+    padding-top: var(--section-padding);
+}
+
+#books .books-title h2::after {
+    height: 1px;
+    content: "";
+    bottom: 20px;
+    width: 700px;
+    right: -700px;
+    position: absolute;
+    background-color: #fff;
+}
+
+/*============= books-slider part css ===============*/
+#books-slider {
+    height: 300px;
+    margin-bottom: 200px;
+}
+
+.books-slider {
+    top: -180px;
+}
+
+#books-slider .prev,
+#books-slider .next {
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+    line-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    background-color: #2341AF;
+}
+
+#books-slider .prev {
+    right: 90px;
+    bottom: -115px;
+}
+
+#books-slider .next {
+    bottom: -115px;
+    right: 15px;
+}
+
+#books-slider .prev:hover {
+    background-color: #071E2A;
+}
+
+#books-slider .next:hover {
+    background-color: #071E2A;
+}
+
+#books-slider .slick-dots {
+    left: 0px;
+    bottom: -107px;
+    position: absolute;
+}
+
+#books-slider .slick-dots li {
+    display: inline-block;
+}
+
+#books-slider .slick-dots li button {
+    width: 10px;
+    border: none;
+    font-size: 0;
+    height: 10px;
+    opacity: 0.2;
+    transition: .4s;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #4D5F93;
+}
+
+#books-slider .slick-dots .slick-active button {
+    opacity: 1;
+    width: 18px;
+    height: 18px;
+    background-color: #071E2A;
+}
+
+/*============= subscribe part css ===============*/
+#subscribe .subscribe-content {
+    padding-top: 285px;
+}
+
+#subscribe .subscribe {
+    top: -150px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    padding: 50px 50px 50px 70px;
+    box-shadow: 0px 4px 100px rgba(0, 40, 78, 0.1);
+}
+
+#subscribe .subscribe h3 {
+    color: #071E2A;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#subscribe .control-form {
+    height: 50px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(77, 94, 147, 0.5)
+}
+
+.contact-hadding h2 {
+    font-family: var(--primary-font);
+}
+
+/*============= footer part css ===============*/
+#footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#footer .icon i {
+    font-size: 30px;
+}
+
+#footer .footer .text small {
+    font-size: 14px;
+    font-family: var(--secondary-font);
+}
+
+#footer .footer-number p {
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
