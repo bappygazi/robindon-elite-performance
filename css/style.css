@@ -175,7 +175,7 @@ p {
 }
 
 #slider .slider-title h2::after {
-    height: 2px;
+    height: 1px;
     content: "";
     bottom: 20px;
     width: 700px;
@@ -252,7 +252,7 @@ p {
     width: 700px;
     right: -700px;
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 /*============= books-slider part css ===============*/

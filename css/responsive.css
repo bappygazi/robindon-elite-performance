@@ -1,5 +1,6 @@
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
+
 	/* common css  */
 	h1 {
 		font-size: 100px;
@@ -26,11 +27,96 @@
 	}
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+	/* root css*/
+	:root {
+		--section-padding: 60px;
+	}
+
+	/* common css  */
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 45px;
+		line-height: 50px;
+	}
+
+	h3 {
+		font-size: 23px;
+	}
+
+	h4 {
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	.primary-btn {
+		height: 40px;
+		font-size: 12px;
+	}
+
+	/* banner part css  */
+	.banner-img {
+		right: -100px !important;
+	}
+
+
+
+
+
+	/* program part css  */
+	#program .program-title h2::after {
+		bottom: 15px;
+		width: 354px;
+		right: -160px;
+	}
+
+	#program .program-item .program-text .primary-text {
+		font-size: 15px;
+		line-height: 25px;
+		font-family: var(--primary-font);
+	}
+
+	.program-item .program-text .list ul li {
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	/* slider part css */
+	#slider .slider-title h2 {
+		margin-bottom: 40px;
+	}
+
+	#slider .slider-title h2::after {
+		width: 300px;
+		right: -300px;
+	}
+
+	.slider-text img {
+		width: 60px;
+	}
+	#slider .slider-text p {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	/* book part css */
+	#books .books-title h2::after {
+		bottom: 20px;
+		width: 485px;
+		right: -490px;
+	}
+
+
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {}
