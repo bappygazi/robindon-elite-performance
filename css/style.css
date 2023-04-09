@@ -126,7 +126,7 @@ p {
     height: 100%;
     position: absolute;
     background: url(../images/program-shape.svg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }

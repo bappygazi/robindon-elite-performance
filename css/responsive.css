@@ -1,17 +1,23 @@
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 767.98px) {
 
+	/* root css*/
+	:root {
+		--section-padding: 50px;
+	}
+
 	/* common css  */
 	h1 {
-		font-size: 100px;
+		font-size: 58px;
 	}
 
 	h2 {
-		font-size: 60px;
+		font-size: 35px;
+		line-height: 45px;
 	}
 
 	h3 {
-		font-size: 31px;
+		font-size: 23px;
 	}
 
 	h4 {
@@ -19,11 +25,92 @@
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	.primary-btn {
 		font-size: 16px;
+	}
+
+	.offcanvas-header .btn-close {
+
+		background: url(../images/close-btn.svg) no-repeat center 100%;
+	}
+
+	#navigation .navbar {
+		padding: 0;
+		height: 70px;
+	}
+
+	.navbar-brand {
+		width: 65%;
+	}
+
+	.navbar-brand img {
+		height: 45px;
+	}
+
+	.banner-img {
+		right: -300px !important;
+	}
+
+	#program {
+		padding-bottom: 50px;
+	}
+
+	#program .program-title h2 {
+		padding-right: 105px;
+	}
+
+	#program .program-title h2::after {
+		left: 0;
+		width: 100%;
+		bottom: -20px;
+	}
+
+	#slider {
+		padding-bottom: 20px;
+	}
+
+	#slider .slider-title h2 {
+		margin-bottom: 50px;
+	}
+
+	#slider .slider-title h2::after {
+		left: 0;
+		width: 100%;
+		bottom: -20px;
+	}
+
+	#books .books-title h2::after {
+		right: 0px;
+		width: 100%;
+		bottom: -20px;
+	}
+
+	#books-slider {
+		padding-bottom: 365px;
+	}
+
+	#subscribe .subscribe {
+		padding: 30px;
+	}
+
+	#subscribe .subscribe {
+		top: -375px;
+	}
+
+	#subscribe .subscribe-content {
+		padding-top: 370px;
+	}
+
+	#footer {
+		border-top: none;
+	}
+
+	.footer-copyright {
+		padding-top: 25px;
+		border-top: 1px solid rgba(255, 255, 255, 0.137);
 	}
 }
 
@@ -68,10 +155,6 @@
 		right: -100px !important;
 	}
 
-
-
-
-
 	/* program part css  */
 	#program .program-title h2::after {
 		bottom: 15px;
@@ -103,6 +186,7 @@
 	.slider-text img {
 		width: 60px;
 	}
+
 	#slider .slider-text p {
 		font-size: 12px;
 		line-height: 20px;
@@ -115,11 +199,108 @@
 		right: -490px;
 	}
 
+	.books-slider {
+		top: -95px;
+	}
+
+	#books-slider {
+		height: 300px;
+	}
+
+	#books {
+		padding-bottom: 170px;
+	}
+
+	#books-slider {
+		height: 200px;
+	}
+
+	#subscribe .subscribe {
+		top: -150px;
+		border-radius: 30px;
+		background: #FFFFFF;
+		padding: 35px 35px 35px 45px;
+	}
+
+	#subscribe .subscribe h3 {
+		font-size: 26px;
+	}
+
+	.subscribe-img img {
+		width: 245px;
+	}
+
+	#subscribe .control-form {
+		height: 40px;
+	}
+
+	#subscribe .subscribe-content {
+		padding-top: 180px;
+	}
+
+	#footer .footer-number p {
+		font-size: 14px;
+	}
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+	/* root css*/
+	:root {
+		--section-padding: 70px;
+	}
+
+	/* common css  */
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 55px;
+		line-height: 50px;
+	}
+
+	h3 {
+		font-size: 26px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.primary-btn {
+		height: 40px;
+		font-size: 12px;
+	}
+
+	#program .program-title h2::after {
+		width: 475px;
+	}
+
+	#slider .slider-title h2::after {
+		bottom: 10px;
+		width: 600px;
+	}
+
+	.slider-text img {
+		width: 80px;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+	.banner-img {
+		right: -30px !important;
+	}
+
+	#slider .slider-title h2::after {
+		width: 640px;
+	}
+}

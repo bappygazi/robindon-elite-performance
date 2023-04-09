@@ -16,8 +16,9 @@ $('.books-slider').slick({
     nextArrow:'<i class="fa-solid fa-angle-right text-white next"></i>',
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 992,
         settings: {
+          centerPadding: '40px',
           slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
@@ -25,16 +26,10 @@ $('.books-slider').slick({
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 774,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
+          centerPadding: '20px',
+          slidesToShow: 2.5,
           slidesToScroll: 1
         }
       }
