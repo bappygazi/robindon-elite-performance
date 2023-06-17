@@ -256,7 +256,7 @@ p {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgba(35, 65, 175, 0.9);
+    background-color: rgba(35, 65, 175, 0.85);
 }
 
 #books .books-title h2::after {
