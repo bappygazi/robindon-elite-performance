@@ -81,6 +81,7 @@ p {
 /*================== 
   navbar part css
 ====================*/
+
 #navigation .navbar {
     height: 90px;
     padding: 0 30px;
@@ -99,13 +100,17 @@ p {
 
 /*============= banner part css ===============*/
 #banner {
+    padding-top: 90px;
+}
+
+#banner .banner-content {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../images/banner.jpg);
 }
 
-#banner .banner-content {
+#banner .banner-item {
     padding: 150px 0;
 }
 
